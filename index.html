@@ -1,0 +1,383 @@
+<html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para Maria 💖</title>
+  <meta name="description" content="Um site romântico feito com carinho.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#240c29; --bg2:#612b63; --bg3:#3b243e;
+      --pink:#ff6ba8; --rose:#ff8fb2; --light:#fffafc; --muted:#e9dfea;
+      --card:#ffffff10; --card-border:#ffffff20; --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif; color:var(--light);
+      background: radial-gradient(1200px 800px at 80% -10%, #3b2b6a33, transparent),
+                  linear-gradient(135deg, var(--bg1), var(--bg2) 50%, var(--bg3));
+      overflow-x:hidden;}
+    .wrap{max-width:1100px; margin:0 auto; padding:24px}
+    header{position:relative; padding:80px 0 40px; text-align:center}
+    .brand{font-family:"Great Vibes", cursive; font-size:72px; line-height:1; letter-spacing:.5px; color:var(--pink); text-shadow:0 6px 30px #ff6ba855}
+    .subtitle{opacity:.9; margin-top:8px}
+    .badge{display:inline-block; margin-top:16px; padding:8px 14px; border-radius:999px; background:var(--card); border:1px solid var(--card-border); backdrop-filter: blur(6px);}
+    /* Hearts */
+    .hearts{position:fixed; inset:0; pointer-events:none; overflow:hidden}
+    .hearts span{position:absolute; font-size:18px; color:var(--rose); opacity:.75; animation:float 10s linear infinite}
+    @keyframes float{from{transform:translateY(110vh) scale(.6) rotate(0)} to{transform:translateY(-10vh) scale(1.1) rotate(360deg)}}
+
+    /* Cards */
+    .card{background:var(--card); border:1px solid var(--card-border); border-radius:24px; box-shadow:var(--shadow); backdrop-filter: blur(10px)}
+    .grid{display:grid; gap:20px}
+    .grid-2{grid-template-columns:1.2fr .8fr}
+    @media(max-width:900px){.grid-2{grid-template-columns:1fr}}
+
+    /* Gallery */
+    .gallery{position:relative; aspect-ratio:16/9; border-radius:20px; overflow:hidden}
+    .slides{position:absolute; inset:0;}
+    .slides img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 800ms ease}
+    .slides img.active{opacity:1}
+    .dots{position:absolute; left:50%; bottom:14px; transform:translateX(-50%); display:flex; gap:8px}
+    .dot{width:10px; height:10px; border-radius:999px; background:#ffffff66; border:1px solid #ffffff88; cursor:pointer}
+    .dot.active{background:#fff}
+
+    /* Timeline */
+    .timeline{padding:16px 20px}
+    .tl-item{display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start; padding:12px 0}
+    .tl-dot{width:12px; height:12px; border-radius:999px; background:var(--pink); box-shadow:0 0 0 4px #ff6ba822}
+    .tl-meta{opacity:.9; font-size:14px}
+    .tl-text{font-weight:500}
+
+    /* Letter */
+    .letter{padding:22px; line-height:1.75; color:#fff; max-height:360px; overflow:auto; border-radius:16px; border:1px dashed var(--card-border)}
+    .letter p{margin:0 0 1em}
+
+    /* Countdown */
+    .countdown{display:flex; gap:16px; justify-content:center; padding:18px}
+    .pill{background:var(--card); border:1px solid var(--card-border); padding:10px 14px; border-radius:14px; text-align:center}
+    .pill b{display:block; font-size:28px}
+
+    /* Footer */
+    footer{opacity:.85; text-align:center; padding:26px 0 80px}
+    a.btn{display:inline-block; background:linear-gradient(135deg, var(--pink), var(--rose)); color:#1a1027; font-weight:700; text-decoration:none; padding:12px 18px; border-radius:999px; box-shadow:0 8px 30px #ff6ba855}
+    .note{font-size:12px; opacity:.7; margin-top:8px}
+
+    /* Spotify */
+    .music{border-radius:16px; overflow:hidden; border:1px solid var(--card-border)}
+  </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+  <div class="hearts" id="hearts"><span style="left: 57.7416vw; animation-duration: 12.3733s; font-size: 30.0818px; opacity: 0.631824;">💖</span><span style="left: 11.032vw; animation-duration: 13.8825s; font-size: 33.7288px; opacity: 0.925926;">💖</span><span style="left: 39.7433vw; animation-duration: 10.529s; font-size: 28.2391px; opacity: 0.792626;">❤</span><span style="left: 91.82vw; animation-duration: 14.9154s; font-size: 25.974px; opacity: 0.600213;">💖</span><span style="left: 65.9347vw; animation-duration: 11.6766s; font-size: 17.604px; opacity: 0.75158;">💖</span><span style="left: 29.7895vw; animation-duration: 10.6129s; font-size: 30.0789px; opacity: 0.751368;">❤</span><span style="left: 7.04738vw; animation-duration: 10.8885s; font-size: 21.0046px; opacity: 0.781775;">💖</span><span style="left: 38.8188vw; animation-duration: 9.88585s; font-size: 30.044px; opacity: 0.955847;">💖</span><span style="left: 37.8725vw; animation-duration: 14.8418s; font-size: 28.2801px; opacity: 0.99122;">💖</span><span style="left: 73.6919vw; animation-duration: 14.9754s; font-size: 23.5391px; opacity: 0.891919;">💖</span><span style="left: 0.911843vw; animation-duration: 12.0931s; font-size: 21.7181px; opacity: 0.885584;">❤</span><span style="left: 27.6419vw; animation-duration: 8.98642s; font-size: 18.6247px; opacity: 0.757437;">💖</span><span style="left: 50.2058vw; animation-duration: 11.1596s; font-size: 17.5603px; opacity: 0.828068;">💖</span><span style="left: 35.4767vw; animation-duration: 9.19245s; font-size: 33.1284px; opacity: 0.924489;">❤</span><span style="left: 59.0368vw; animation-duration: 11.7249s; font-size: 29.42px; opacity: 0.844718;">💖</span><span style="left: 52.1409vw; animation-duration: 9.30866s; font-size: 18.2591px; opacity: 0.992548;">💖</span></div>
+  <div class="wrap">
+    <header>
+      <div class="brand" id="brand">Bruno &amp; Mariah</div>
+      <div class="subtitle" id="subtitle">Desde <span id="since">2025-03-23</span></div>
+      <div class="badge" id="badge">Feito com todo o meu amor 💘</div>
+    </header>
+
+    <section class="grid grid-2">
+      <div class="card" style="padding:18px">
+        <div class="gallery">
+          <div class="slides" id="slides"><img loading="lazy" src="https://i.postimg.cc/1tZtHGyP/IMG-20250625-075332-413-1.webp" class=""><img loading="lazy" src="https://i.postimg.cc/bwDwfCJp/IMG-20250727-114129265-HDR-1.jpg" class=""><img loading="lazy" src="https://i.postimg.cc/Wz1sWSCR/IMG-20250723-171230186-HDR.jpg" class="active"></div>
+          <div class="dots" id="dots"><button class="dot" aria-label="Ir para foto 1"></button><button class="dot" aria-label="Ir para foto 2"></button><button class="dot active" aria-label="Ir para foto 3"></button></div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:18px">
+        <h2 style="margin:6px 6px 10px">Nossa história</h2>
+        <div class="timeline" id="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div>
+            <div class="tl-meta">01 Mai 2025</div>
+            <div class="tl-text">Dia que nós entramos em propósito ✨</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div>
+            <div class="tl-meta">01 Ago 2025</div>
+            <div class="tl-text">Virou oficial: eu e você 💞</div>
+          </div>
+        </div></div>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="pill"><b>110</b><small>dias</small></div>
+          <div class="pill"><b>02</b><small>horas</small></div>
+          <div class="pill"><b>14</b><small>min</small></div>
+          <div class="pill"><b>25</b><small>seg</small></div></div>
+      </div>
+    </section>
+
+    <section class="grid" style="margin-top:20px">
+      <div class="card" style="padding:18px">
+        <h2 style="margin:6px 6px 10px">Uma carta para você</h2>
+        <div class="letter" id="letter"><p>Eu não sei se existem palavras capazes de traduzir tudo o que você significa para mim, mas hoje quero tentar você é mais do que um amor: é um presente, uma força que me completa e dá sentido aos meus dias.</p><p>      Quando olho para você, enxergo tudo o que sempre sonhei e muito mais vejo cumplicidade, alegria, segurança e um futuro que faz meu coração acelerar cada instante ao seu lado é único, e cada sorriso seu é como uma poesia que nunca me canso de admirar.</p><p>Você é minha calmaria nos momentos difíceis e minha euforia nos dias de felicidade é a certeza no meio das incertezas, a luz que ilumina os meus passos e o abraço que sempre me acolhe.</p><p>Obrigado por ser quem você é, por me ensinar tanto sobre o amor e por me mostrar, todos os dias, que ao seu lado o mundo é mais bonito, mais leve e cheio de cores.</p><p>Quero te amar, cuidar de você e caminhar contigo em cada capítulo da minha vida quero dividir sonhos, superar desafios e celebrar conquistas, sempre de mãos dadas com você.</p><p>Porque amar você não é apenas a melhor decisão: é o maior privilégio que a vida já me deu ❤️</p></div>
+        <div style="display:flex; justify-content:center; gap:12px; margin-top:16px">
+          <a class="btn" id="surpriseBtn" href="#">Clique para uma surpresa</a>
+          <a class="btn" id="downloadBtn" href="#">Baixar esta página</a>
+        </div>
+        <div class="note"></div>
+      </div>
+
+      <div class="card" style="padding:18px">
+        <h2 style="margin:6px 6px 10px">Nossa música</h2>
+        <div id="music" class="music"><iframe style="border:0; width:100%; height:352px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="https://open.spotify.com/embed/track/3cqeso9qMA6HoISorEoFfk?si=eea075643ebe4708"></iframe></div>
+        <div class="note"></div>
+      </div>
+    </section>
+
+    <footer>
+      Feito com amor por <span id="yourName">Bruno</span>. <br>
+      <small>Este site é só nosso. Sempre. </small>
+    </footer>
+  </div>
+
+  <script>
+    // ========================
+    // CONFIGURAÇÕES RÁPIDAS
+    // Edite tudo aqui para personalizar o site.
+    // ========================
+    const CONFIG = {
+      yourName: "Bruno",
+      partnerName: "Mariah",
+      startDate: "2025-05-01", // formato ISO: AAAA-MM-DD
+      anniversaryMonth: 5, // 1-12
+      anniversaryDay: 1, // 1-31
+      images: [
+        // Substitua por fotos de vocês (links ou caminhos locais)
+        "https://i.postimg.cc/1tZtHGyP/IMG-20250625-075332-413-1.webp",
+        "https://i.postimg.cc/bwDwfCJp/IMG-20250727-114129265-HDR-1.jpg",
+        "https://i.postimg.cc/Wz1sWSCR/IMG-20250723-171230186-HDR.jpg",
+      ],
+      timeline: [
+        { date: "01 Mai 2025", text: "Dia que nós estramos em propósito ✨" },
+        { date: "01 Ago 2025", text: "Virou oficial: eu e você 💞" },
+      ],
+      letter: `Eu não sei se existem palavras capazes de traduzir tudo o que você significa para mim, mas hoje quero tentar você é mais do que um amor: é um presente, uma força que me completa e dá sentido aos meus dias.
+
+      Quando olho para você, enxergo tudo o que sempre sonhei e muito mais vejo cumplicidade, alegria, segurança e um futuro que faz meu coração acelerar cada instante ao seu lado é único, e cada sorriso seu é como uma poesia que nunca me canso de admirar.
+
+Você é minha calmaria nos momentos difíceis e minha euforia nos dias de felicidade é a certeza no meio das incertezas, a luz que ilumina os meus passos e o abraço que sempre me acolhe.
+
+Obrigado por ser quem você é, por me ensinar tanto sobre o amor e por me mostrar, todos os dias, que ao seu lado o mundo é mais bonito, mais leve e cheio de cores.
+
+Quero te amar, cuidar de você e caminhar contigo em cada capítulo da minha vida quero dividir sonhos, superar desafios e celebrar conquistas, sempre de mãos dadas com você.
+
+Porque amar você não é apenas a melhor decisão: é o maior privilégio que a vida já me deu ❤️`,
+      spotifyEmbed: "https://open.spotify.com/embed/track/3cqeso9qMA6HoISorEoFfk?si=eea075643ebe4708"
+    };
+
+    // ========================
+    // LÓGICA DO SITE (não precisa mexer)
+    // ========================
+    const $ = (sel, el=document) => el.querySelector(sel);
+    const $$ = (sel, el=document) => [...el.querySelectorAll(sel)];
+
+    function setupHeader(){
+      const title = `${CONFIG.yourName} & ${CONFIG.partnerName}`;
+      $("#brand").textContent = title;
+      $("#yourName").textContent = CONFIG.yourName;
+      $("#since").textContent = CONFIG.startDate;
+      document.title = `Para ${CONFIG.partnerName} 💖`;
+    }
+
+    function setupGallery(){
+      const slides = $("#slides");
+      const dots = $("#dots");
+      slides.innerHTML = "";
+      dots.innerHTML = "";
+      CONFIG.images.forEach((src, i)=>{
+        const img = new Image();
+        img.loading = 'lazy';
+        img.src = src;
+        if(i===0) img.classList.add('active');
+        slides.appendChild(img);
+
+        const d = document.createElement('button');
+        d.className = 'dot' + (i===0? ' active':'');
+        d.setAttribute('aria-label', `Ir para foto ${i+1}`);
+        d.addEventListener('click', ()=>go(i));
+        dots.appendChild(d);
+      });
+      let idx = 0, N = CONFIG.images.length, t;
+      const go = (n)=>{
+        idx = (n+N)%N;
+        $$(".slides img").forEach((img, i)=>img.classList.toggle('active', i===idx));
+        $$(".dot").forEach((dot, i)=>dot.classList.toggle('active', i===idx));
+      }
+      const next = ()=>{ go(idx+1) }
+      t = setInterval(next, 4000);
+      slides.addEventListener('mouseenter', ()=>clearInterval(t));
+      slides.addEventListener('mouseleave', ()=>t=setInterval(next,4000));
+      // expose for dots
+      window.go = go;
+    }
+
+    function setupTimeline(){
+      const tl = $("#timeline");
+      tl.innerHTML = CONFIG.timeline.map(ev=>`
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div>
+            <div class="tl-meta">${ev.date}</div>
+            <div class="tl-text">${ev.text}</div>
+          </div>
+        </div>`).join('');
+    }
+
+    function setupLetter(){
+      const el = $("#letter");
+      el.innerHTML = CONFIG.letter
+        .split(/\n\n+/)
+        .map(p=>`<p>${p.replace(/\n/g,'<br>')}</p>`)
+        .join('');
+    }
+
+    function nextAnniversary(){
+      const now = new Date();
+      const yearNow = now.getFullYear();
+      const next = new Date(yearNow, CONFIG.anniversaryMonth-1, CONFIG.anniversaryDay);
+      if(next < now) next.setFullYear(yearNow+1);
+      return next;
+    }
+
+    function setupCountup() {
+  const startDate = new Date("2025-05-01T00:00:00");
+  const box = document.getElementById("countdown");
+
+  function tick() {
+    const now = new Date();
+    const diff = now - startDate; // ms
+    const s = Math.floor(diff / 1000);
+
+    const days = Math.floor(s / 86400);
+    const hours = Math.floor((s % 86400) / 3600);
+    const mins = Math.floor((s % 3600) / 60);
+    const secs = s % 60;
+    box.innerHTML = `
+      <div class="pill"><b>${String(days).padStart(2,'0')}</b><small>dias</small></div>
+      <div class="pill"><b>${String(hours).padStart(2,'0')}</b><small>horas</small></div>
+      <div class="pill"><b>${String(mins).padStart(2,'0')}</b><small>min</small></div>
+      <div class="pill"><b>${String(secs).padStart(2,'0')}</b><small>seg</small></div>
+    `;
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+setupCountup();
+
+
+    function setupMusic(){
+      const box = $("#music");
+      if(!CONFIG.spotifyEmbed){ box.innerHTML = '<div class="note">Adicione uma música especial definindo <code>spotifyEmbed</code> nas configurações.</div>'; return; }
+      box.innerHTML = `<iframe style="border:0; width:100%; height:352px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="${CONFIG.spotifyEmbed}"></iframe>`;
+    }
+
+    function floatingHearts(){
+      const container = $("#hearts");
+      const make = ()=>{
+        const span = document.createElement('span');
+        span.textContent = Math.random() < .5 ? '💞' : '💖';
+        span.style.left = Math.random()*100 + 'vw';
+        span.style.animationDuration = 8 + Math.random()*7 + 's';
+        span.style.fontSize = 14 + Math.random()*20 + 'px';
+        span.style.opacity = .6 + Math.random()*.4;
+        container.appendChild(span);
+        setTimeout(()=>span.remove(), 15000);
+      };
+      for(let i=0;i<18;i++) setTimeout(make, i*300);
+      setInterval(make, 1200);
+    }
+
+    function surprise(){
+      const btn = $("#surpriseBtn");
+      btn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        confetti();
+        btn.textContent = 'Eu te amo a cada dia 💞';
+      });
+    }
+
+    function confetti(){
+      const duration = 1200;
+      const end = performance.now() + duration;
+      (function frame(){
+        const p = document.createElement('div');
+        p.style.position='fixed'; p.style.top='-10px'; p.style.left=(Math.random()*100)+'vw';
+        p.style.width='8px'; p.style.height='14px'; p.style.background = `hsl(${Math.random()*360} 90% 70%)`;
+        p.style.transform=`rotate(${Math.random()*180}deg)`; p.style.borderRadius='2px'; p.style.zIndex=9999;
+        document.body.appendChild(p);
+        const x = Math.random()*40-20; const rot = Math.random()*720-360;
+        p.animate([
+          { transform:p.style.transform, opacity:1 },
+          { transform:`translate(${x}vw, 90vh) rotate(${rot}deg)`, opacity:.9 }
+        ], { duration: 1200 + Math.random()*800, easing:'cubic-bezier(.2,.8,.2,1)' }).addEventListener('finish', ()=>p.remove());
+        if(performance.now() < end) requestAnimationFrame(frame);
+      })();
+    }
+
+    function downloadPage(){
+      const a = document.getElementById('downloadBtn');
+      a.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const blob = new Blob([document.documentElement.outerHTML], {type:'text/html'});
+        const url = URL.createObjectURL(blob);
+        const tmp = document.createElement('a');
+        tmp.href = url; tmp.download = `para-${CONFIG.partnerName.toLowerCase().replace(/\s+/g,'-')}.html`;
+        document.body.appendChild(tmp); tmp.click(); tmp.remove();
+        URL.revokeObjectURL(url);
+      });
+    }
+
+    // Boot
+    setupHeader();
+    setupGallery();
+    setupTimeline();
+    setupLetter();
+    setupCountup();
+    setupMusic();
+    floatingHearts();
+    surprise();
+    downloadPage();
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+</script>
+
+</body></html>
